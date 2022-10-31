@@ -1,12 +1,14 @@
-let word="Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+let string ="Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
 
-function findStringLength(str){
+function findStringWordLength(str){
     // daxil edilən str string məlumatının neçə xarakterdən ibarət olduğunu return edən metod yazın
+    const arrOfStrings = str.split(" ")
+    return arrOfStrings.length
 }
 
-function findStringLength(str){
+function findStringLetterLength(str){
     // daxil edilən str string məlumatının neçə hərfdən ibarət olduğunu return edən metod yazın
-    return console.log(str.length)
+    return str.length
 }
 
-findStringLength(word)
+console.log(`String ${findStringWordLength(string)} sözdən və ${findStringLetterLength(string)} hərfdən ibarətdir.`)
